@@ -156,108 +156,6 @@ Since the product of two nonzero real numbers is nonzero then this is not true w
 
 
 
-\section{Problem 2.1}
-Prove that the empty set is a subset of every set. 
-\\
-Proof:\\ 
-Let $\emptyset$ be the empty set. \\ 
-Let E be every set. \\ 
-Suppose $x \in \emptyset.$ \\ 
-Then $x \in E.$ \\ 
-Since $\emptyset$ cannot contain any elements, $x \in \emptyset$ is false. \\ 
-So, $x \in E$ is true. \\ 
-Thus, $\emptyset \subset E.$
-\\
-
-\begin{figure}[h]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
-\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
-\newpage
-\subsection{Problem 2.2}
-A complex number z is said to be algebraic if there are integers $a_0, \dots, a_n,$ not all zero, such that $a_0 z^n + a_1 z^{n-1}+ \dots + a_n=0.$ \\ 
-\\
-Prove that the set of all algebraic numbers is countable. Hint: For every positive integer N there are only finitely many equations with $n+|a_0|+|a_1| + \dots |a_n|= N.$\\ 
-\\
-Proof:\\ 
-Let $A_n$ be the set of integers $a_0 z^n + a_1 z^(n-1)+ \dots + a_n=0.$ \\ 
-Each equation has finitely many equations that satisfy this condition. \\ 
-By Theorem 2.12's Corollary, Suppose A is at most countable, and, for every $\alpha \in A, B_\alpha$is at most countable. Put T= $ \cup_{\alpha \in A}B_\alpha.$ Then T is at most countable. For T is equivalent to a subset of S=$\cup_{n=1}^\infty E_n$ then the set of algebraic numbers, $\cup_{n=2}^\infty A_N$, is at most countable. \\ 
-Since the entirety of the rational numbers, Q, are algebraic, then the set of all algebraic numbers is countable. 
-
-
-\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
-\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
-\subsection*{Problem 2.3}
-Prove that there exist real numbers which are not algebraic. \\ 
-\\
-Proof:\\ 
-As proved above in Problem 2.2, the set of algebraic numbers in the the set of the Real numbers is countable. \\ 
-If every real number is algebraic, then the whole set of the real numbers is countable. \\
-This is a contradiction, due to "the binary representation of the real numbers (base 2 instead of 10) will notice that Theorem 2.14 implies that the set of all real numbers in uncountable." \\
-Thus, there exist real numbers which are not algebraic. 
-\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
-\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
-\\
-\newpage
-\subsection*{Problem 2.4}
-Is the set of irrational real numbers countable? \\ 
-No\\ 
-Proof:\\ 
-Since the set of real numbers, which is the union of the rational and irrational numbers, is not countable. \\ 
-Thus, the set of real irrational numbers is not countable. 
-\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
-\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
-\\
-\newpage 
-\section{Problem 2.5}
-Construct a bounded set of real numbers with exactly three limit points. \\
-Proof:\\ 
-Let E be the set of numbers in $a+ \frac{1}{n},$ where $a \in \{1,2,3\}$ and $n \in \{2,3,4,5, \dots\}.$\\
-So, $\{1,2,3\} \subset E^'$, as every deleted neighborhood of 1,2, or 3 contains a point in E.\\
- Let $\delta =$ min ${|x-1|,|x-2|,|x-3|}.$\\
- If $x \notin \{1,2,3\}$, then the set U of y such that $|x-y|< \frac{\delta}{2}$ contains at most a finite number of points of E, since the set $V=(1,1+\frac{\delta}{2}) \cup (2,2+\frac{\delta}{2} \cup (3,3+\frac{\delta}{2})$ is disjoint from U, and V contains all the points of the set E except possibly the finite set of points $a + \frac{1}{n}$ for which $n \leq \frac{2}{\delta}.$ \\
- If $p_1, \dots, p_r$ are the points of E in U, let $N$ be the minimum of $\frac{\delta}{2}$ and the $|x-p_n|$ for which $x \neq p_n.$ \\
- Then the set W of points y such that $|y-x|< N$ contains no points of E except possibly x. \\
- Hence $x \in E^'.$ \\
- Thus $E^{'}=\{1,2,3\}.$
-
-
-\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
-\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
-\\
-\section{Problem 2.6}
-Let $E^'$ be the set of all limit points of a set E. Prove that $E^'$ is closed. Prove that E and $\bar{E}$ have the same limit points. (Recall that $\bar{E}=E \union E^'.$) Do E and $E^'$ always have the same limit points?\\ 
-Proof:\\ 
-Let $x \in (\bar{E})^'.$ \\ 
-Let $r>0.$\\ 
-There is a point y of $\bar{E}$ such that $0<d(y,x)<r.$ \\ 
-If $y \in E^',$ then z=y. \\ 
-If $y \notin E$, then $y \in E^'.$ \\ 
-Let $s=min(d(x,y)),r-d(x,y)),$ where $s>0.$ \\ 
-Since $y \in E^',$ there exists $z \in E$ with $0<d(x,z)<s.$ \\ 
-So $d(z,x) \geq d(x,y)-d(x,z)>0$ and $d(z,x) \leq d(x,y)+d(y,z)<d(x,y)+r -d(x,y)=r.$ \\ 
-Next, demonstrate that E and $\bar{E}$ have the same limit points. \\ 
-Suppose $x \in E^'.$ \\ 
-Since every deleted neighborhood of x contains a point of E, then furthermore every deleted neighborhood of x contains a point of $\bar{E}.$ \\ 
-Thus, $E^{'} \subseteq (\bar{E})^'.$ \\ 
-So, E and $E^'$ may have different sets of limit points. \\ 
-So one case would be if $E=\{0,1,\frac{1}{2},\frac{1}{3}, \dots, \frac{1}{n}, \dots\},$ then $E^{'}={0},$ while $(E^{'})^{'}= \emptyset.$
-
-\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
-\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
-
-
-
-
-
-
-
-
-
-
-
-
-\newpage
-
 \section{The First Compilation}
 
 \section*{Me Pontificating}
@@ -360,6 +258,346 @@ Let K be a compact subset of a metric space X. Suppose that $F_{\beta}$ is a col
 
 \section{Chapter 2 Baby Rudin}
 
+
+\section{Problem 2.1}
+Prove that the empty set is a subset of every set. 
+\\
+Proof:\\ 
+Let $\emptyset$ be the empty set. \\ 
+Let E be every set. \\ 
+Suppose $x \in \emptyset.$ \\ 
+Then $x \in E.$ \\ 
+Since $\emptyset$ cannot contain any elements, $x \in \emptyset$ is false. \\ 
+So, $x \in E$ is true. \\ 
+Thus, $\emptyset \subset E.$
+\\
+
+\begin{figure}[h]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
+\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
+\newpage
+\subsection{Problem 2.2}
+A complex number z is said to be algebraic if there are integers $a_0, \dots, a_n,$ not all zero, such that $a_0 z^n + a_1 z^{n-1}+ \dots + a_n=0.$ \\ 
+\\
+Prove that the set of all algebraic numbers is countable. Hint: For every positive integer N there are only finitely many equations with $n+|a_0|+|a_1| + \dots |a_n|= N.$\\ 
+\\
+Proof:\\ 
+Let $A_n$ be the set of integers $a_0 z^n + a_1 z^(n-1)+ \dots + a_n=0.$ \\ 
+Each equation has finitely many equations that satisfy this condition. \\ 
+By Theorem 2.12's Corollary, Suppose A is at most countable, and, for every $\alpha \in A, B_\alpha$is at most countable. Put T= $ \cup_{\alpha \in A}B_\alpha.$ Then T is at most countable. For T is equivalent to a subset of S=$\cup_{n=1}^\infty E_n$ then the set of algebraic numbers, $\cup_{n=2}^\infty A_N$, is at most countable. \\ 
+Since the entirety of the rational numbers, Q, are algebraic, then the set of all algebraic numbers is countable. 
+
+
+\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
+\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
+\subsection*{Problem 2.3}
+Prove that there exist real numbers which are not algebraic. \\ 
+\\
+Proof:\\ 
+As proved above in Problem 2.2, the set of algebraic numbers in the the set of the Real numbers is countable. \\ 
+If every real number is algebraic, then the whole set of the real numbers is countable. \\
+This is a contradiction, due to "the binary representation of the real numbers (base 2 instead of 10) will notice that Theorem 2.14 implies that the set of all real numbers in uncountable." \\
+Thus, there exist real numbers which are not algebraic. 
+\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
+\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
+\\
+\newpage
+\subsubsection*{Problem 2.4}
+Is the set of irrational real numbers countable? \\ 
+No\\ 
+Proof:\\ 
+Since the set of real numbers, which is the union of the rational and irrational numbers, is not countable. \\ 
+Thus, the set of real irrational numbers is not countable. 
+\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
+\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
+\\
+\newpage 
+\subsubsection{Problem 2.5}
+Construct a bounded set of real numbers with exactly three limit points. \\
+Proof:\\ 
+Let E be the set of numbers in $a+ \frac{1}{n},$ where $a \in \{1,2,3\}$ and $n \in \{2,3,4,5, \dots\}.$\\
+So, $\{1,2,3\} \subset E^'$, as every deleted neighborhood of 1,2, or 3 contains a point in E.\\
+ Let $\delta =$ min ${|x-1|,|x-2|,|x-3|}.$\\
+ If $x \notin \{1,2,3\}$, then the set U of y such that $|x-y|< \frac{\delta}{2}$ contains at most a finite number of points of E, since the set $V=(1,1+\frac{\delta}{2}) \cup (2,2+\frac{\delta}{2} \cup (3,3+\frac{\delta}{2})$ is disjoint from U, and V contains all the points of the set E except possibly the finite set of points $a + \frac{1}{n}$ for which $n \leq \frac{2}{\delta}.$ \\
+ If $p_1, \dots, p_r$ are the points of E in U, let $N$ be the minimum of $\frac{\delta}{2}$ and the $|x-p_n|$ for which $x \neq p_n.$ \\
+ Then the set W of points y such that $|y-x|< N$ contains no points of E except possibly x. \\
+ Hence $x \in E^'.$ \\
+ Thus $E^{'}=\{1,2,3\}.$
+
+
+\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
+\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
+\\
+\subsubsection{Problem 2.6}
+Let $E^'$ be the set of all limit points of a set E. Prove that $E^'$ is closed. Prove that E and $\bar{E}$ have the same limit points. (Recall that $\bar{E}=E \union E^'.$) Do E and $E^'$ always have the same limit points?\\ 
+Proof:\\ 
+Let $x \in (\bar{E})^'.$ \\ 
+Let $r>0.$\\ 
+There is a point y of $\bar{E}$ such that $0<d(y,x)<r.$ \\ 
+If $y \in E^',$ then z=y. \\ 
+If $y \notin E$, then $y \in E^'.$ \\ 
+Let $s=min(d(x,y)),r-d(x,y)),$ where $s>0.$ \\ 
+Since $y \in E^',$ there exists $z \in E$ with $0<d(x,z)<s.$ \\ 
+So $d(z,x) \geq d(x,y)-d(x,z)>0$ and $d(z,x) \leq d(x,y)+d(y,z)<d(x,y)+r -d(x,y)=r.$ \\ 
+Next, demonstrate that E and $\bar{E}$ have the same limit points. \\ 
+Suppose $x \in E^'.$ \\ 
+Since every deleted neighborhood of x contains a point of E, then furthermore every deleted neighborhood of x contains a point of $\bar{E}.$ \\ 
+Thus, $E^{'} \subseteq (\bar{E})^'.$ \\ 
+So, E and $E^'$ may have different sets of limit points. \\ 
+So one case would be if $E=\{0,1,\frac{1}{2},\frac{1}{3}, \dots, \frac{1}{n}, \dots\},$ then $E^{'}={0},$ while $(E^{'})^{'}= \emptyset.$
+
+\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{Figures/IMG_1077.JPG}
+\caption{Placeholder for my proofs} \label{fig:Euler_pic}\end{center}\end{figure} 
+
+
+
+
+\subsubsection*{7}
+
+Let $A_1, A_2, A_3, ...$ be subsets of a metric space. \\
+(a)If $B_n= \cup_{i=1}^n \bar{A_i},$ for $n=1,2,3,...$ \\
+Since $(E \cup F)^{'}=E^{'} \cup F^{'}$ then $\overline{(E \cup F)}=\bar{E} \cup \bar{F}.$\\ 
+So if $x \in E^{'},$ then $x \in (E \cup F)^{'}.$\\
+Also, if $x \in F^{'}$ then $x \in (E \cup F)^{'}.$ \\ 
+By definition, $E^{'}\cup F^{'} \subseteq (E \cup F)^{'}.$ \\ 
+Next, if $x \notin E^{'} \cup F^{'}.$ then there exists r>0 where the element y of E cannot satisfy $0<d(x,y)<r.$\\
+Also, the same would go for s>0 where the element y of F cannot satisfy $0<d(x,y)<s.$\\
+Let h= min(r,s).\\ 
+It would follow that $h>0$ and the element y of the set $E \cup F$ cannot satisfy $0<d(x,y)<h.$\\
+Thus, $x \notin (E \cup F)^{'}.$\\
+Proof by Induction: \\ 
+$\overline{B_n}=\overline{\cup_{i=1}^{n}A_i}$ \\ 
+$\overline{B_n}=\overline{A_1 \cup \cup_{i=2}^{n}A_i}$ \\ 
+$\overline{B_n}=\bar{A_1} \cup \overline{\cup_{i=2}^{n}A_i}$ \\ 
+$\overline{B_n}=\overline{A_1} \cup \cup_{i=2}^{n}\bar{A_i}$ \\ 
+$\overline{B_n}=\cup_{i=1}^{n}\bar{A_i}$ \\ 
+Therefore, by induction, $\overline{B_n}=\cup_{i=1}^{n}\bar{A_i}$ for
+n=1,2,3,....
+\\(b)\\
+Since $B \supseteq A_{i}$ for all i, then $\bar{B} \supseteq \bar{A_i}$ for all i, and so \\ 
+$\bar{B} \supseteq \cup_{i=1}^{\infty}\bar{A_i}$. \\ 
+Let $A_i={q_i}$ where $\{q_1, q_2,q_3, ..., q_n,...\}$ is in the set of rational numbers, then B is the full set of rational numbers. \\ 
+Thus, $\bar{B}=R^{1},$ while $\bar{A_i}=A_i$ for each i, i.e. $\cup \bar{A_i}$ is the set of all rational numbers. 
+
+\subsubsection*{8}
+Is every point of every open set E $\subset R^2$ a limit point of E? Answer the same question for closed sets in $R^2.$ \\
+Let E be an open set in $R^2$ let $(x_1,x_2) \in E,$ let S be such that $(y_1,y_2) \in E$ if $\sqrt{(y_1-x_1)^2 +(y_2-x_2)^2}<s$ and let $r>0.$Then the point $(z_1,z_2)=(x_1 +\frac{1}{2} min (r,s), x_2)$ belongs to E and satisfies $0<\sqrt{(z_1-x_1)^2+(z_2-x_2)^2}<r.$ 
+There are closed sets for which this statement is not true. For example, any finite set E is closed, yet $E^{'}=\emptyset$ for a finite set.  
+\section*{9}
+Let $E^\circ$ denote the set f all interior points of a set E. [See Definition 2.18(e); $E^ \circ$ is called the interior of E.]\\ 
+(a) Prove that $E^ \circ$ is always open. \\ 
+(b)Prove that E is open if and only if $E^\circ =E.$ \\ 
+(c)If G $\subset$ E and G is open, prove that $G \subset E^\circ.$ \\ 
+(d) Prove that the complement of $E^\circ$ is the closure of the complement of E. \\ 
+(e) Do E and $\bar{E}$ always have the same interiors? \\ 
+(f) Do $E$ and $E^\circ$ always have the same closures? \\ 
+(a) \\ 
+Proof: \\ 
+Let $x \in E^{\circ}.$ \\ 
+Then there exists $r>0$ such that $y \in E$ if $d(x,y)<r.$ \\ 
+We claim that in fact, $y \in E^0$ if d(x,y)<r, so that $x \in (E^ {\circ})^{\circ}.$ \\ 
+Then if $d(z,y)<s,$ we have (by the triangle inequality) \\ d(x,z)<r, and so $z \in E.$ \\ 
+By def, this means $y \in E^{\circ}.$\\ 
+Since y was any point with $d(x,y)<r$, it follows that all such points are in $E^{\circ},$ and so $x \in (E^{\circ})^{\circ}.$ \\ 
+(b) \\ 
+Prove that E is open if and only if $E^{\circ}=E.$ \\ 
+By def, E is open if and only if each of its points is an interior point, which says precisely that $E = E^{\circ}.$ \\ 
+(c) If $G \subset E$ and G is open, prove that $G \subset E^{\circ}.$ \\ 
+If $G \subset E$ and G is open, then $G=G^{\circ} \subseteq E^{\circ}.$ \\ 
+(d)Prove that the complement of $E^{\circ}$ is the closure of the complement of E. \\ 
+Part (c) shows that $E^{\circ}$ is the largest open set contained in E, i.e. the union of all open sets contained in E. \\ 
+Hence its complement is the intersection of all closed sets containing the complement of E, and this, by theorem 2.27 (c), is the closure of the complement of E. \\ 
+(e) Do E and $\bar{E}$ always have the same interiors? \\ 
+No. \\ 
+If E is the rational numbers in the space $R^{1},$ then \\ 
+$E^{\circ}=\emptyset,$ while $\bar{E}=R^1,$ so that the interior of $\bar{E}$ is $R^1.$ \\ 
+(f) Do E and $E^{\circ}$ always have the same closures? \\ 
+No. If E is the rational numbers in the space $R^{1},$ then $\bar{E}=R^{1}$, while $E^{\circ}=\emptyset,$ so that $\bar{E^{\circ}}=\emptyset.$\\ 
+\subsubsection*{11}
+For $x \in R^1$ and $y \in R^1,$ define \\ 
+$d_1(x,y)=(x-y)^2$ \\ 
+$d_2(x,y)=\sqrt{|x-y|}$\\ 
+$d_3(x,y)=|x^2-y^2|$\\ 
+$d_4(x,y)=|x-2y|$ \\ 
+$d_5(x,y)= \frac{|x-y|}{1+|x-y|}$\\ 
+Determine, for each of these, whether it is a metric or not. \\
+The function $d_{1}(x,y)$ fails the triangle inequality condition, since $d_{1}(0,1)+d_{1}(1,2)=1+1=2<4=d_{1}(0,2).$\\ 
+The function $d_2(x,y)$ meets the triangle inequality condtion, since $|x-z|\leq \sqrt{|x-y|}+\sqrt{|y-z|}$, as one can easily see by squaring both sides. Hence $d_2$ is a metric. \\ 
+The function $d_{3}(x,y)$ fails the positivity condition, since $d_{2}(1,-1)=0.$ \\
+(Restricted to $[0, \infity]$, $d_{3}$ would be a metric.) \\ 
+Since $d_{4}(1, \frac{1}{2}=0,$ the function $d_{4}(x,y)$ likewise fails the positivity condition. It also fails the symmetry condition, since $d_{4}(x,y)$ likewise fails the positivity condition. It also fails the symmetry condition, since $d_{4}(x,y) \neq d_{4}(y,x)$ in general. \\ 
+The function $d_{5}(x,y)$ is a metic. 
+In fact we can prove more generally that if d(x,y) is a metric, so is $p(x,y)= \frac{d(x,y)}{1+d(x,y)}$. It is obvious that p meets the nonegativity and symmetry requirements and we need only verify the triangle inequality, 
+which in this case says that \\ 
+$\frac{d(x,z)}{1+d(x,z)} \leq \frac{d(x,y)}{1+d(x,y)}+\frac{d(y,z)}{1+d(y,z)}.$\\ 
+To do this, let a=d(x,z), b=d(x,y) and c=d(y,z). We need to show that if $a \leq b+c,$ then \\ 
+$\frac{a}{1+a}\leq \frac{b}{1+b}+\frac{c}{1+c}.$\\ 
+Clearing out the denominators, we find this inequality to be equivalent to $a+ab+ac+abc \leq b+c+ab+ac+2bc+2abc,$ which is clearly true. \\ 
+\subsubsection*{12}
+Let $K \subset R^1$ consist of 0 and the numbers $1/n$, for $n=1,2,3,...$ Prove that k is compact directly from the definition (without using the Heine-Borel theorem.)\\ 
+Suppose $K \subset U_{\alpha}$ is open. \\ 
+Then 0 must be in some set $U_{\alpha 0}.$\\ 
+Since $U_{\alpha 0}$ is open, there exists $\delta >0$ such that $(- \delta , \delta) \subset U_{\alpha 0}.$\\ 
+In particular $\frac{1}{n} \in U_{\alpha 0}$ if $n> \frac{1}{\delta}.$ \\ 
+Let N be the largest integer in $\frac{1}{\delta},$ and let $\alpha_j, j=1,...,N,$ be such that $\frac{1}{j} \in U_{\alpha j}.$\\ 
+Then $K \subset \cup_{j=0}^N U_{\alpha j}.$
+\subsubsection*{13}
+Construct a compact set of real numbers whose limit points form a countable set. \\ 
+Let $E={0} \cup {\frac{1}{n}: n \in N}.$ $E \subset [0,1],$ the only limit point of E is 0, and $0 \in E,$ so E contains all of its limit points. It is thus closed and bounded, and therefore it it compact. \\ 
+Let $K_{n}=2^{-n}.$ \\ 
+$E +\sum_{k=0}^{n-1} 2^{-k}$ and $k=(\cup_{n=0}^\infinity K_n)\cup {2}.$\\ 
+The only limit point of $k_n$ is $\sum_{k=2}^{n-1}2^{-k}.$\\ 
+Thus, k has countably many limit points in $[0,2),$ and they are given by ${0} \cup {2-2^{-n}}_{n=0}^{\infty} k.$ has no limit points in $(\-\infity,0)$ and none in $(2, \infty)$.\\ 
+2 is a limit point of k because 2= $lim_{n \longrightarrow \infty} 2-2^{-n},$ but $2 \in k. $\\ 
+Thus, k contains its $\subset R$ limit points, and so it is closed. k $\subset [0,2],$ so k is bounded. Hence k is a compact set with countably many limit points.
+\subsubsection*{14}
+Give an example of an open cover of the segment (0,1) which has no finite subcover. \\ 
+Consider ${A_j}_{j=1}^{\infity}$ where $A_j=(2^{-j},1).$\\ 
+To prove ${A_j}$ is an open cover, let $x \in (0,1).$\\ 
+If we choose j large enough so that $2^{j}>x^{-1},$ then $2^{-j}<x<1,$ and so $x \in A_j.$ To prove that there is no finite subcover, let ${A_{nk k=1}}^{m}$ is a finite subset of ${A_j}.$\\ Let $N=max_{1} \leq k \leq m \cap_{k}.$\\
+Since $A_1 \subset A_2 \subset ..., \cup_{k=1}^m A_{nk}=A_N.$\\ 
+For $x \in (0,2^{-N}),x \notin A_N,$ and so ${A_N}^m$, is not an open cover of $(0,1).$ Thus, ${A_j}$ has no finite subcover.  
+
+\subsubsection*{15}
+Show that Theorem 2.36 and its Corollary become false (in $R^1$, for example) if the word "compact" is replaced by "closed" or by "bounded."\\ 
+Theorem 2.36 says that if ${k_\alpha}$ are compact and if $\cap_{\alpha \in A}K_{\alpha}=\emptyset$ whenever $|A|<\infty,$ then $\cap_{\alpha}K_{\alpha} \neq \emptyset.$ \\ 
+Its corollary states that if ${k_n}$ are compact and $k_1 \supset k_2 \supset ...,$ then $\cap_{1}^\infty k_n= \neq \emptyset.$ Any counterexample to the corollary is also one for the theorem. \\ 
+Closed: Let $k_n=[n, \infty).$ Then $k_{n+1} \subset k_n \forall_n.$\\ 
+$\forall_x \in R, $there exists $n \in N$ such that $n>x$, so $x \in K_n$ $\supset \cap_{i=1}^\infty,$ so $\cap_{1}^{\infty} k_i=\emptyset.$\\ 
+Bounded: Let $k_n=(0,\frac{1}{n}].$ Then $k_{n+1}=(0,\frac{1}{k+1}] \subset (0, \frac{1}{n}]=k_n \forall n.$\\ 
+Thus, $\cap_{1}^\infty k_i=\emptyset.$\\ 
+Let $x \in R.$\\ 
+If $ x \leq 0$ or $x \geq 1,$ then $x \notin k_1 \supset \cap_{1}^{\infty}k_i.$\\ 
+If $x \in (0,1),$ then there exists $n$ such that $\frac{1}{n}<x,$ so $x \notin (0, \frac{1}{n}]= k_n \supset \cap_1^\infty.$
+
+
+16, 17, 19, 22, and 29 
+\subsubsection*{16}
+Regard Q, the set of all rational numbers, as a metric space, with $d(p,q)=|p-q|.$ Let E be the set of all $p \in Q$ such that $2<p^2<3.$ Show that E is closed and bounded in Q, but that E is not compact. Is E open in Q? \\
+Let $E= [(-\sqrt{3},-\sqrt{2})\cup (\sqrt{2}, \sqrt{3})] \cap Q$, where Q is the set of rational numbers. \\ 
+For E to be bounded in Q, $M \in R$ where R is the set of the real numbers and $q \in Q$ such that $|p-q|<M$ for all $p \in E$ would have to be true. \\ 
+So let $q=0$ and $M=\sqrt{3}$ since for all $p \in E,$ $|p|<\sqrt{3}=M.$\\ 
+Then for E to be closed, let $p \in Q$ where Q is the set of rational numbers, be a limit point of E. \\ 
+By definition, every neighborhood of p contains some q=p such that $q \in E.$\\ 
+Assume $p \notin E.$\\ 
+Since $p \notin Q,$ then $p \in (\infty, -\sqrt{3}) \cup (-\sqrt{2}, \sqrt{2}) \cup (\sqrt{3}, \infty).$ \\ 
+Let F be a union of three disjoint open intervals. \\ 
+Then p belongs to one of these three disjoint sets. \\ 
+So there exists an open neighborhood I of p such that $p \in I \subset F \subset E^{c}.$\\ 
+Hence a contradiction, that p is a limit point of E. \\
+Thus, $p \in E.$\\ 
+So E contains its limit points and this is closed. \\ 
+E is not compact: \\ 
+Let $x_{0}=\sqrt{2}<x_1<x_2<x_3<...<x_n$ where $x_n \in \frac{R}{Q}$ and $x_n<\sqrt{3}$ for all n, and $lim_{n \longrightarrow \infty} x_n = \sqrt{3}.$ Let $U = u \cup {u_i}$ where $u=(-\sqrt{3},-\sqrt{2}) \cap Q$ and $U_i=(x_{i-1},x_i) \cap Q $ for all i $\in N.$ U is an open cover of E. \\ 
+So each set in U is open. \\ 
+Then, all sets in u are disjoint so if U is an open cover, then there cannot be a finite subcover. \\ 
+So let $x \in E.$\\ 
+If $x<0, x\in U.$\\ 
+Otherwise, since $x \in Q, x \neq x_i$ for any i. \\ 
+Thus, there exists i such that $x_{i-1}< x< x_{i}.$ so $x \in U_i.$\\ 
+So $x \in U_i.$\\ 
+Then U covers E. \\ 
+Thus, E is not compact.\\ 
+E is open in Q: \\ 
+$\cup {v \in U} \supset E,$ and since for all $ V \in U$ then $v \subset E,$ $\cup{v \in U}\subset E,$\\ 
+So, $E= \cup{V\in U}$ is open. 
+
+
+\subsubsection*{17}
+Let E be the set of all $x \in [0,1]$ whose decimal expansion contains only the digits 4 and 7. Is E countable? Is E dense in [0,1]? Is E compact? Is E perfect? \\ 
+Is E countable: \\ 
+No. \\ 
+For any list of the elements $\{a_1,a_2,,...,a_n\}$, there can always be an element a of the set E that is not in this list. \\ 
+This can be done by the nth digit of a is 4 if the nth digit of $a_n$ is 7 and equal to 7 if the nth digit of $a_n$ is 4.  Is E dense in $[0,1]?$\\ 
+No, since $E \subset[0.4,0.8].$\\ 
+Is E compact? \\ 
+Yes. \\ 
+E is closed:\\ 
+Let $x \in [0,1]|E,$ the decimal expansion of x contains a digit that is not 4 and 7. \\ 
+Let the first digit be in the nth place $(x_n).$\\ 
+Let y be any element of E. \\ 
+Let the first digit where x and y have a difference of the mth digit where $(m \leq n,x_m \neq y_m).$\\ 
+Then $|x-y|\geq 10^{-m}- \epsilon.$\\ 
+$\epsilon \leq \sum_{k=m+1}^\infty 10^{-k}|x_k-y_k|.$\\ 
+Since $y_k \in \{4,7\}$ and $x_k \in \{0,1,2,3,4,5,6,7,8,9\}.$\\ 
+So, $|x_k-y_k|\leq 7.$\\ 
+Thus, $\epsilon \leq \frac{7}{9}10^{-m}.$\\ 
+Then, $|x-y|\geq \frac{2}{9 \cdot 10^m}\geq \frac{1}{9 \cdot 10^n.}$\\ 
+So, x is an interior point of $[0,1]|E.$\\ 
+Thus, E is closed. \\ 
+Therefore E is closed an bounded. \\ 
+Hence, E is compact. \\ 
+E is perfect. \\ 
+Let $x \in E$ and each $ \epsilon >0$ there is a point $y \in E$ with $0<|x-y|<\epsilon$ by setting the nth digit of x from 4 to 7 or from 7 to 4 in the nth place for any $n>1-log_{10} \epsilon.$\\ 
+Then $x \in E^{'} E \subseteq E^{'}.$\\ Since we proved above that E is closed then $E=E^{'}.$ \\ 
+Thus, E is perfect. 
+\subsubsection*{19}
+(a) If A and B are disjoint closed sets in some metric space , prove that they are separated. \\ 
+(b) Prove the same for disjoint open sets. \\ 
+(c) Fix $p \in , \delta >0,$ define A to be the set of all $q \in $ for which $d(p,q)< \delta,$ define B similarly, with $>$ in place of $<.$ Prove that A and B are separated. \\ 
+(d) Prove that every connected metric space with at least two points is uncountable. Hint: Use(c)\\ 
+(a) $A \cap B = \emptyset.$ \\ 
+Since A and B are closed then $A \cap \Bar{B}=\emptyset=\Bar{A} \cap B.$\\ 
+Then A and B are separated. \\ 
+(b)Since $x |B$ is a closed set that contains A then by theorem 2.27 (c) $X | B \supseteq \Bar{A}.$\\ 
+So, $\Bar{A} \cap B= \emptyset.$ \\ 
+Also, $A \cap \Bar{B}= \emptyset.$\\ 
+(c) Due to the fact that sets A and B are disjoint open sets, then by (b) above they are also separated. \\ 
+(d)Let $x \in X$ and $y \in X.$\\ 
+Let $ d(x,y)=d>0.$\\ 
+Then for every $\delta \in (0,d),$ there must be a point z such that $d(x,z)=\delta.$\\ 
+Thus, there exists a subset of X that can be placed in one-to-one correspondence with the interval [0,d], and so X is uncountable. 
+\subsubsection*{22}
+A metric space is called separable if it contains a countable dense subset. Show that $R^k$ is separable. Hint: Consider the set of points which have only rational coordinates. \\ 
+$Q^k$ is a direct product of finitely many countable sets. \\ 
+Thus, it is countable. \\ 
+$Q^k \subset R^k.$\\ 
+For it to be a countably dense subset: \\ 
+Let U be and open subset of $R^k.$\\ 
+U contains an open ball $B=B_r(x).$\\ 
+B contains an open rectangle $R= \Pi_{i=1}^k(a_i,b_i).$\\ 
+Then , for all i, there exists $c_i \in Q \cap(a_i,b_i).$\\ 
+So $c=(c_1,...,c_k)\in Q^k \cap R \subset Q^k \cap U.$ \\ 
+Thus, $Q^k$ is a dense set. \\ 
+Therefore, $Q^k$ is a countable dense subset of $R^k.$ \\
+This follows directly that $R^k$ is separable. 
+\subsubsection*{29}
+Prove that every open set in $R^1$ is the union of an at most countable collection of disjoint segments. Hint: Use Exercise 22. \\ 
+Let O be open. \\ 
+For each pair of points $x \in O$ and $y \in O$ the equivalence relation is $ x ~ y iff [min(x,y),max(x,y)] \subset O.$\\ 
+This is an equivalence relation.
+Reflexive: \\ 
+$[x,x] \subset O$ if $x \in O$
+So, $x ~ x$. \\ 
+Symmetric: \\ 
+$min(x,y)= min(y,y)$ and $max(x,y)=max(y,x)$\\
+So, $x~y and y ~x.$\\ 
+Transitive: \\ 
+$[min(x,z),max(x,z)] \subseteq [min(x,y),max(x,y)] \cup [min(y,z),max(y,z)] \subseteq O.$ \\ 
+So $x~y$ and $y~z,$ then $x~z.$\\ 
+Then, $min(x,z)\geq min(min(x,y),min(y,z))$ and $max(x,z)\leq max(max(x,y),max(y,z)).$\\ 
+O can be written as a disjoint union of pairwise disjoint equivalence classes. \\ 
+Let each equivalence class be an open interval. \\ 
+For each $x \in O,$ let $A=\{z:[z,x]\subseteq O\}$ and B=$\{z:[x,z] \subseteq O.$ \\ 
+Let $a= infA$ and $b=supB.$\\
+So $(a,b) \subset O.$\\ 
+If $a<z<b,$ there exists $c \in A$ where $c<z$ and $d \in B$ with $d>z.$ \\ 
+Then $z \in [c,x] \cup [x,d] \subseteq O.$ \\ 
+So, (a,b) is the equivalence class that contains x. \\ 
+Each element of (a,b) is equivalent to x. \\ 
+Suppose $z<a.$\\
+If z was equivalent to x then $[z,x]$ would be contained in O. \\ 
+So, $z \in A.$ \\ 
+Thus, a wouldn't be a lower bound for A. \\
+Also, if $z>b$ and $z~x,$ then b could not be an upper bound for B. \\ 
+Therefore, $z \notin (a,b).$\\ 
+Since O is a union of pairwise disjoint open intervals then it most be at most countable. \\ 
+This is due to the fact since each open interval contains a rational number that is not in any other interval. \\ 
+Hence, every open set in $R^1$ is the union of an at most countable collection of disjoint segments. 
+
+
+
+
+\newpage
 \section{The Second Compilation}
 \section*{Me Pontificating}
 Here is me being a control freak and doing all the work now so I can return to my simulations and practice numerical relativity projects with CCRG as planned. Thank you for your understanding. I do need an A in this course as the fellowships, scholarships, grants, programs, and institutions I am interested in do indeed care about my final gpa. Please provide any feedback for these cases. \\ 
@@ -501,7 +739,7 @@ magnitude of $|\phi (X_N,y)|$ when  $x_N$  is in a small neighborhood of   y.) (
 
 
 \subsection{Whiteboard Figures}
-\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=5 in]{WhiteboardPictures/Exam 2/IMG_1052.JPG}
+\begin{figure}[ht]\begin{center}\includegraphics[angle=, origin=c,width=2.5 in]{Figures/IMG_1077.JPG}
 \caption{Placeholder for bifurcation diagram proofs...preliminary angry proof} \label{fig:Euler_pic}\end{center}\end{figure} 
 
 
@@ -509,6 +747,210 @@ magnitude of $|\phi (X_N,y)|$ when  $x_N$  is in a small neighborhood of   y.) (
 \newpage 
 \section{Chapter 3 Baby Rudin}
 
+\section*{Problem 3.1}
+Prove that the convergence of ${s_n}$ implies convergence of $|{s_n|}.$ Is the converse true? 
+\\
+Proof:\\ 
+If ${s_n}$ converges, there exists s $\in R$ such that for all $\epsilon>0,$ there exists N>0 such that for all $n \geq N, |s_n -s|< \epsilon.$ Given $ \epsilon>0,$ choose N as above. Using the reverse triangle inequality, for all $n \geq N, ||S_n|-|s||\leq |s_n -s|< \epsilon.$ \\ 
+This means that ${|s_n|} converges to |s|.$\\ 
+To prove that the converse is false, let $s_n=1$ if n is odd and $s_n=-1$ if n is even. Then ${s_n}$ does not converge, but $|s_n|=1$ for all n, so ${|s_n}|$ converges to 1.\\ 
+
+\section*{Problem 3.2}
+Calculate $lim_{n \rightarrow \infty} (\sqrt{n^2+n}-n)$\\ 
+Proof: \\ 
+$lim_{n \rightarrow \infty} (\sqrt{n^2+n}-n)$=$lim_{n \rightarrow \infty} (\sqrt{n^2+n}-n) \frac{(\sqrt{n^2+n}-n)}{(\sqrt{n^2+n}-n)}$\\ 
+$lim_{n \rightarrow \infty} (\sqrt{n^2+n}-n)$=$lim_{n \rightarrow \infty}  \frac{(n^2+n-n^2)}{(\sqrt{n^2+n}+n)}$\\
+$lim_{n \rightarrow \infty} (\sqrt{n^2+n}-n)$=$lim_{n \rightarrow \infty}  \frac{n}{n\sqrt{1+\frac{1}{n}}+n}$\\
+$lim_{n \rightarrow \infty} (\sqrt{n^2+n}-n)$=$lim_{n \rightarrow \infty}  \frac{1}{n\sqrt{1+\frac{1}{n}}+1}$\\
+$lim_{n \rightarrow \infty} (\sqrt{n^2+n}-n)$=$\frac{1}{2}$\\
+\subsection*{Problem 3.3}
+If $s_1=\sqrt{2},$ and $s_{n+1}=\sqrt{2+\sqrt{s_n}}$ where $n=(1,2,3,...),$ prove that ${s_n}$ converges, and that $s_n<2$ for $(n=1,2,3...).$\\ 
+Key Definition: If a sequence is bounded and monotone then it converges.\\ 
+Proof: \\ 
+We know $s_q=\sqrt{2}<2.$\\ 
+If $s_n<2,$ then $\sqrt{s_n}<\sqrt{2}.$ \\ 
+So $s_{n+1}=\sqrt{2+\sqrt{s_n}}<\sqrt{2+\sqrt{2}}=2.$\\ 
+Thus, by induction, $s_n<2$ for all n. \\ 
+Need to prove $s_{n+1}>s_n$. \\ 
+We know $s_q=\sqrt{2},$ so $s_2=\sqrt{2+\sqrt{2}}>\sqrt{2}=s_1.$\\ 
+If we assume $s_{n-1}<s_n,$ then we have $\sqrt{s_{n-1}<\sqrt{s_n}}.$\\ 
+$0>\sqrt{s_{n-1}}-\sqrt{s_n}.$\\ $2>2+\sqrt{s_{n-1}}-\sqrt{s_n}.$\\ 
+$2>s_{n}^2-\sqrt{s_n}.$\\ 
+$2+\sqrt{s_n}>s_{n}^2. $\\ 
+$s_{n+1}=\sqrt{2+\sqrt{s_n}}>s_n.$\\ 
+Thus, by induction, $s_1<s_2<....$ \\ 
+This means ${s_n}$ is monotone increasing and bounded by 2. \\
+Hence, by theorem 3.14, ${s_n}$ converges.
+\section*{Problem 3.4}
+Find the upper and lower limits of the sequence ${s_n}$ defined by $s_1=0; s_{2m}=\frac{s_{2m-1}}{2}; s_{2m+1}=\frac{1}{2}+s_{2m}.$\\ 
+Proof: \\ 
+By induction, $s_{2m}=\frac{1}{2}-\frac{1}{2^m}$ and $s_{2m+1}=1-\frac{1}{2^m}.$ for m=1,2,.... The second of these equalities is a direct consequence of the first, and so we need only prove the first. Immediate computation shows that $s_2=0$ and $s_3=\frac{1}{2}.$ \\ 
+Hence assume that both formulas hold for $m \leq r.$\\ 
+Then $s_{2r+2}=\frac{1}{2}s_{2r+1}.$\\ 
+$s_{2r+2}=\frac{1}{2}(1-\frac{1}{2^r}).$\\
+$s_{2r+2}=\frac{1}{2}-\frac{1}{2^{r+1}}.$\\\\ 
+Thus, by induction it is proved. \\ 
+Therefore, we have $lim_{n \rightarrow \infty}sup s_n=1$ and $lim_{n \rightarrow \infty}inf s_n=\frac{1}{2}.$
+\subsection*{Problem 3.5}
+For any two real sequences ${a_n},{b_n}$ prove that $lim_{n \rightarrow \infty} sup(a_n +b_n)\leq lim_{n \rightarrow \infty}a_n$+ $lim_{n \rightarrow \infty}sup b_n,$ provided the sum on the right is not of the form $\infty-\infty.$\\ 
+Proof: \\ 
+Let ${n_k}$ be a sequence in $N$ such that $lim_{k \rightarrow \infty} (a_{n_k}+b_{n_k})=lim sup(a_n +b_n).$\\ 
+Let A and B be the sets of subsequential limits of $a_{n_k}$ and $b_{n_k}$ respectively. \\ 
+Then $lim sup (a_n +b_n)= lim_{k \rightarrow \infty} (a_{n_k}+b_{n_k}) \leq sup A+ sup B \leq lim sup a_n + lim sup b_n.$
+
+\newpage
+\section{Unedited Problem set}
+
+\section*{6}
+Investigate the behavior (convergence or divergence) of $\sum a_n$ if \\ 
+$(a) a_n= \sqrt{n+1}-\sqrt{n}$\\ 
+$a_n= (\sqrt{n+1}-\sqrt{n}) (\frac{\sqrt{n+1}+\sqrt{n}}{\sqrt{n+1}+\sqrt{n}})$
+\\
+$a_n= \frac{n+1-n}{\sqrt{n+1}+\sqrt{n}}$
+\\
+$a_n=\frac{1}{\sqrt{n+1}+\sqrt{n}}$
+\\ 
+Since $a_n=\frac{1}{\sqrt{n+1}+\sqrt{n}}>\frac{1}{2\sqrt{n+1}},$ the series $\sum a_n$ where the p-series is p=$\frac{1}{2}$ so it diverges by the comparison test. 
+(b) $a_n= \frac{\sqrt{n+1}-\sqrt{n}}{n}$
+\\ 
+$a_n=\frac{\sqrt{n+1}-\sqrt{n}}{n}$ 
+\\
+$a_n= (\frac{\sqrt{n+1}-\sqrt{n}}{n})(\frac{\sqrt{n+1} +\sqrt{n}}{\sqrt{n+1}+\sqrt{n}})$ \\
+
+$a_n = \frac{1}{n(\sqrt{n+1}+\sqrt{n})}$
+\\ 
+Since $a_n = \frac{1}{n(\sqrt{n+1}+\sqrt{n})}>\frac{1}{n^\frac{3}{2}}$ the series converges by the comparison test where the p-series is $p=\frac{3}{2}.$
+\\
+(c)$a_n=(n^\frac{1}{n}-1)^n$
+Since $(a_n)^\frac{1}{n}=n^\frac{1}{n}-1,$ then by the root test as $n \longrightarrow \infty$ the series converges. \\ 
+(d)
+$(d) a_n = \frac{1}{1+z^n}$ for complex values of z. \\ 
+If $|z|>1,$ the series converges by comparison with a geometric series with $r= \frac{1}{|z|}<1.$ If $|z|\leq 1,$ then $|a_n| \geq \frac{1}{2},$ so that $a_n$ does not tend to zero. Hence the series diverges. 
+
+\section*{7}
+Prove that the convergence of $\sum \frac{\sqrt{a_n}}{n}$ if $a_n \geq 0.$\\ 
+Since $(\sqrt{a_n}-\frac{1}{n})^2 \geq 0,$ then  
+$\frac{\sqrt{a_n}}{n}\leq \frac{1}{2}(a_n^2+\frac{1}{n^2}).$\\ 
+Next, $\sum a_n^2$ converges by the comparison test with $\sum a_n$ (since $\sum a_n$ converges, we have $a_n <1$ for large n, and hence $a_n^2<a_n.$
+Since $\sum \frac{1}{n^2}$ converges (p series, p =2). 
+Then by Theorem 3.47 $\sum \frac{1}{2}(a_n+\frac{1}{n^2})=\frac{1}{2}(\sum a_n +\sum \frac{1}{n^2})$ the series $\sum \frac{1}{2}(a_n+\frac{1}{n^2}$ also converges.
+\\Thus, $\sum \frac{\sqrt{a_n}}{n}$ converges by the comparison test. \\ 
+
+\section*{8}
+If $\sum a_n$ converges, and if ${b_n}$ is monotonic and bounded, prove that $\sum a_n b_n$ converges. \\ 
+Let $S_n =\sum_{k=1}^n a_k (S_0 =0).$ 
+\\ 
+Then $a_k = S_k- S_{k-1}$ for $k=1,2,....$ 
+\\
+Let M be an upper bound for $|b_n|$ and $|S_n|$. \\ 
+Let S=$\sum a_n$ and b= lim $b_n.$ 
+\\Choose N to be large in a way that the next three inequalities hold for all $m> N$ and $n> N$:\\ 
+$|b_n S_n -bS|<\frac{\epsilon}{3}; |b_mS_m-bS|<\frac{\epsilon}{3}; |b_m-b_n|<\frac{\epsilon}{3M}.$\\ 
+Then if $n>m>N,$ the formula for summation by parts yields, $\sum_{k=m+1}^n a_n b_n= b_nS_n-b_mS_m+\sum_{k=m}^{n-1}(b_k-b_{k+1})S_k.$\\ 
+Thus, $b_nS_n-b_mS_m|<\frac{2 \epsilon}{3},$ and 
+$|\sum_{k=m}^{n-1}(b_k-b_{k+1})S_k|\leq M \sum_{k=m}^{n-1}|b_k-b_{k+1}|.$ \\ 
+Since the sequence ${b_n}$ is monotonic,  $\sum_{k=m}^{n-1}|b_k-b_{k+1}|=|\sum_{k=m}^{n-1}(b_k-b_{k+1})|=|b_m-b_n|<\frac{\epsilon}{3M,}$ 
+from which the desired inequality follows. 
+Therefore, given $\epsilon >0$ there exists N such that $| \sum_{k=m+1}^n a_kb_k|<\epsilon$ if $n> m \geq N.$ 
+\\
+Thus, the partial sums of the series form a Cauchy sequence.
+\section*{9}
+Find the radius of convergence of each of the following power series\\ 
+(a)$\sum n^3 z^n,$ \\ 
+The radius of convergence is 1, as $a_n=n^3$ fulfills the requirement $lim_{n \longrightarrow \infty} \frac{a_n}{a_{n+1}}=1.$\\ 
+(b) $\sum \frac{2^n}{n!}z^n,$ \\
+The radius of convergence is infinite, as $a_n =\frac{2^n}{n!}$ fulfills the requirement $lim_{n \longrightarrow \infty} \frac{a_n}{a_{n+1}}=lim_{n \longrightarrow \infty} \frac{n+1}{2}=\infty.$\\
+(c)$\sum \frac{2^n}{n^2}z^n,$ \\
+The radius of convergence is $\frac{1}{2},$ as $a_n=\frac{2^n}{n^2}$ fulfills the requirement \\ 
+$lim_{n \longrightarrow \infty} \frac{a_n}{a_{n+1}}=lim_{n \longrightarrow \infty} \frac{1}{2}(1+\frac{1}{n})^2=\frac{1}{2}.$\\
+(d)$\sum \frac{n^3}{3^n}z^n.$ \\ 
+The radius of convergence is 3, as $a_n = \frac{n^3}{3^n}$ fulfills the requirement that \\ 
+$lim_{n \longrightarrow \infty} \frac{a_n}{a_{n+1}}= lim_{n \longrightarrow \infty} 3(\frac{n}{n+1})^3=3.$\\ 
+\section*{10}
+Suppose that the coefficients of the power series $\sum a_n z^n$ are integers, infinitely many of which are distinct from zero. Prove that the radius of convergence is at most 1. \\ 
+
+
+Due to the fact that the sequence ${a_n}$ contains infinitely many nonzero numbers. \\ 
+Let ${n_k}$ be a subsequence of positive integers where $a_{n_k} \neq 0$ for all k. \\ 
+Furthermore, as $a_n$ is an integer for each n, then $|a_n_k| \geq$ for each k, and thus $(|a_{n_k}|)^{n_k} \geq 1.$\\ 
+Therefore, lim sup $n \longrightarrow \infty (|a_n|)^{n}\geq 1$. \\ 
+Thus, R= $\frac{1}{lim sup n \longrightarrow \infty (|a_n|)^{n}} \leq 1.$ So the radius of convergence is at most 1. 
+\subsection*{Unedited Problem set}
+11, 12, 16,17 ,18
+\section*{11}
+Suppose $a_n > 0, s_n =a_1 + \dots +a_n,$ and $\sum a_n$ diverges. \\ 
+(a) Prove that $\sum \frac{a_n}{1+a_n}$ diverges. \\ 
+If $a_n$ does not remain bounded, then $\frac{a_n}{1+a_n}$ does not tend to zero, and hence the series $\sum \frac{a_n}{1+a_n}$ diverges. If $a_n \geq M$ for all n, then $\frac{a_n}{1+a_n}\leq \frac{1}{1+M}a_n,$ and hence again the series is divergent. \\ 
+(b) Prove that $\frac{a_{n+1}}{s_{n+1}}+ \dots \frac{a_{n+k}}{s_{n+k}} \leq 1- \frac{S_N}{s_{n+k}}$ and deduce that $\sum \frac{a_n}{S_n}$ diverges. \\
+Replacing each denominator on the left by $s_{N+k}$,we have $\frac{a_{N+1}}{S_{N+1}}+ \dots \frac{a_{N+k}}{s_{N+k}}$ $\geq \frac{1}{S_{N+k}}(A_{N+1}+a_{N+2}+ \dots +a_{N+k}=$  $\frac{1}{s_{N+k}}(S_{N+k}-s_N)$=$1-\frac{S_N}{S_{N+k}}$.\\ 
+It follows that the partial sums of the series $\sum \frac{a_n}{s_n}$ do not form a Cauchy sequence. For, no matter how large N is taken, if N is held fixed, the right hand side can be made larger than $\frac{1}{2}$ by taking k sufficiently large (since $S_{N+k} \longrightarrow \infty ).$
+(c)Prove that $\frac{a_n}{s_n^2}\leq \frac{1}{s_{n-1}}-\frac{1}{s_n}$ and deduce that $\sum \frac{a_n}{s_n^2}$ converges. \\ 
+We observe that if $n \geq 2,$ then \\ 
+$\frac{1}{s_{n-1}}-\frac{1}{s_n}=\frac{s_n -s_{n-1}}{s_{n-1}s_n}= \frac{a_n}{s_{n-1}s_n}\geq \frac{a_n}{s_n^2}.$\\ 
+Since the series $\sum_{n=2}^\infty \frac{1}{s_{n-1}}-\frac{1}{s_n}$ converges to $\frac{1}{a_1,}$ it follows by comparison that $\sum \frac{a_n}{s_n^2}$ converges. Or in other words it is a telescoping series.\\ 
+(d)What can be said about $\sum \frac{a_n}{1+na_n}$ and $\sum \frac{a_n}{1_n^2 a_n}$?\\ 
+The series $\sum \frac{a_n}{1+na_n}$ may either be convergent or divergent. If the sequence ${na_n}$ is bounded above or has a positive lower bound, it definitely diverges. Thus if $na_n \leq M,$ each term is at least $\frac{1}{1+M}a_n,$ and so the series diverges. If $na_n \geq \epsilon >0$ for all n, then each term is at least $\frac{\epsilon}{1+\epsilon}\frac{1}{n},$ and once again the series is divergent. \\ 
+In general, however, the series $\sum \frac{a_n}{1+na_n}$ may converge. For example let $a_n= \frac{1}{n^2}$ if n is not a perfect square and $a_n= \frac{1}{\sqrt{n}}$ if n is a perfect square. The sum of $\frac{a_n}{1+na_n}$ over the nonsquares obviously converges by comparison with the p series, p=2. As for the sum over the square integers it is $\sum \frac{1}{n+n^2}$ which converges by comparison with p series, p=2. \\ 
+Finally, the series $\sum \frac{a_n}{1+n^2 a_n}$ is obviously majorized by the p series with p=2, hence converges. \\ 
+\section*{12}
+Suppose $a_n>0$ and $\sum a_n$ converges. Put $r_n= \sum_{m=n}^\infty a_n.$ \\ 
+(a) Prove that $\frac{a_m}{r_m}+ \dots +\frac{a_n}{r_n}>1-\frac{r_n}{r_m}$ if $m<n$, and deduce that $\sum \frac{a_n}{r_n}$ diverges. \\ 
+(a) Replacing all the denominators on the left-hand side by the largest one $(r_m)$, we find \\ 
+$\frac{a_m}{r_m}+ \dots + \frac{a_n}{r_n}> \frac{a_m + \dots +a_n}{r_m}= \frac{r_m-r_{n+1}}{r_m}>1-\frac{r_n}{r_m},$ since $r_n > r_{n+1}.$\\ 
+Just like in problem 11, this keeps the partial sums of the series $\sum \frac{a_n}{r_n}$ from forming a Cauchy sequence. No matter how large m is taken, one can choose n larger so that the difference $\sum_{k=m}^n \frac{a_k}{r_k}$ is at least $\frac{1}{2}$, since $r_n \longrightarrow 0$ as $n \longrightarrow \infty.$ \\ 
+(b)Prove that $\frac{a_n}{\sqrt{r_n}}<2(\sqrt{r_n -\sqrt{r_{n+1})}}$ and deduce that $ \sum \frac{a_n}{\sqrt{r_n}}$ converges. 
+
+
+We have $\frac{a_n}{\sqrt{r_n}}(\sqrt{r_n}+\sqrt{r_{n+1}})= a_n +a_n \frac{\sqrt{r_{n+1}}}{\sqrt{r_n}}<2a_n=2(r_n -r_{n+1}).$ Dividing both sides by $\sqrt{r_n}+\sqrt{r_{n+1}}$ now yields the desired inequality. Since the series $\sum (\sqrt{r_n}-\sqrt{r_{n+1}})$ converges to $\sqrt{r_1},$ it follows by comparison that $\sum \frac{a_n}{\sqrt{r_n}} converges. $ \\
+
+\section*{16}\\ 
+Fix a positive number $\alpha.$ Choose $x_1> \sqrt{\sqrt{\alpha}},$ and define $x_1, x_2, x_3,...,$ by the recursion formula $x_{n+1}=\frac{1}{2}(x_n +\frac{\alpha}{x_n}).$\\ 
+(a) Prove that ${x_n}$ decreases monotonically and that $lim x_n = \sqrt{\alpha}.$\\ 
+We note that $x_n$ is always positive, and that if $x_n > \sqrt{\alpha},$ then $x_{n+1}^2-\alpha =\frac{1}{4}(x_n - \frac{\alpha}{x_n})^2 >0.$ Thus, $x_n > \sqrt{\alpha}$ for all n. Since $x_n > \sqrt{\alpha},$ it follows that $\frac{\alpha}{x_n}<\sqrt{\alpha}<x_n.$ Hence $x_n - x_{n+1}=\frac{1}{2}(x_n-\frac{\alpha}{x_n})>0,$ and so ${x_n}$ decreases to a limit $\lambda \geq \sqrt{\alpha}.$\\ 
+(b) Put $\epsilon =x_n- \sqrt{\alpha},$ and show that $\epsilon_{n+1}= \frac{\epsilon _n ^2}{2 x_n}<\frac{\epsilon_n^2}{2 \sqrt{\alpha}}$ so that, setting $\beta=2 \sqrt{\alpha},$
+$\epsilon_{n+1}< \beta(\frac{\epsilon_1}{\beta})^{2^n} (n=1,2,3,...,).$\\ 
+We have $\frac{\epsilon_n^2}{2x_n}=\frac{x_n^2-2x_n \sqrt{\alpha}+\alpha}{2x_n}=\frac{1}{2}(x_n + \frac{\alpha}{x_n})- \sqrt{\alpha}=x_{n+1}-\sqrt{\alpha}=\epsilon_{n+1}.$\\ 
+The inequality then results from the simple fact that $x_n > \sqrt{\alpha.}$ Thus $\epsilon_2< \frac{\epsilon_1 ^2}{\beta}= \beta (\frac{\epsilon_1}{\beta})^2.$ \\ 
+By induction, if we suppose that $\epsilon_n < \beta (\frac{\epsilon_1}{\beta})^{2^{n-1}},$ we find $\epsilon_{n+1}<\frac{\epsilon_n^2}{\beta}<\beta (\frac{\epsilon_1}{\beta})^{2^n}.$\\
+
+
+
+(c) Since $\beta=2\sqrt{3} and \epsilon=2-\sqrt{3}, then \frac{\epsilon_1}{\beta}=\frac{2-\sqrt{3}}{2\sqrt{3}}=\frac{1}{\sqrt{3}}-\frac{1}{2}.$\\ 
+Since $\frac{1}{\sqrt{3}}+\frac{1}{2}>\frac{1}{2}+\frac{1}{2},$ then $\frac{1}{\sqrt{3}}+\frac{1}{2}>1.$ \\ 
+So $\frac{\epsilon_1}{\beta}(\frac{1}{\sqrt{3}}+\frac{1}{2})=(\frac{1}{\sqrt{3}}-\frac{1}{2})(\frac{1}{\sqrt{3}+\frac{1}{2}}).$\\ 
+Hence, $\frac{\epsilon_1}{\beta}(\frac{1}{\sqrt{3}}+\frac{1}{2})=\frac{1}{12}.$ \\ 
+Since $\frac{\epsilon_1}{\beta}(\frac{1}{\sqrt{3}}+\frac{1}{2})<\frac{1}{10} then \frac{\epsilon_1}{\beta}<\frac{1}{10}.$\\ 
+Therefore from (b), $\epsilon_5< \beta (\frac{\epsilon_1}{\beta})^{2^4}<2\sqrt{3}*10^{-16}<4*10^-16.$ \\ 
+With the same logic, $\epsilon_6<4*10^{-32}.$
+
+
+
+\section*{17}\\
+Fix $\alpha>1.$ Take $x_1>\sqrt{\alpha},$ and define \\ 
+$x_{n+1}= \frac{\alpha +x_n}{1+x_n}=x_n +\frac{\alpha-x_n^2}{1+x_n}.$\\ 
+(a) Prove that $x_1> x_3>x_5>... $\\ 
+Most of the work in this problem is done by the following three identities, whose proofs are routine computations: \\ 
+$(1+x_n)(1+x_{n+1})=2(1+x_n)+(\alpha -1),$ \\ 
+$x_{n+1}^2 -\alpha= - [\frac{(\alpha -1)}{(1+x_n)^2}](x_n^2- \alpha),$ \\ 
+$x_{n+1}^2 -\alpha= \frac{(\alpha -1)^2}{(1+x_n)^2 (1+x_{n-1})^2}(x_{n-1}^2 -\alpha)=$ \\ 
+$X_{n+1}^2- \alpha=[\frac{\alpha -1}{(\alpha-1)+2(1+x_{n-1}}]^2 (x_{n-1}^2 -\alpha).$ 
+The second of these identities shows that $x_n$ and $x_{n+1}$ lie on opposite sides of $\sqrt{\alpha}$. The third shows that $x_{n+1}$ is closer to $\alpha$ than $x_{n-1}.$ Hence, since $x_1> \sqrt{\alpha}$ by hypothesis, parts (a) and (b) are proved. \\ 
+as for (c), the third relation shows that $|x_{n+1}^2- \alpha| \leq r^{2k}|x_n^2 -\alpha|,$ where $r= \frac{\alpha -1}{2+ \alpha -1}<1.$ It follows that $|x_{n+2k}^2-\alpha|\leq r^{2k}|x_n^2-\alpha|,$ and the right-hand side of this expression tends to zero as $k \longrightarrow \infty.$ Thus, $lim_{k \longrightarrow \infty}x_{n+2k}= \alpha $ whether n is odd or even, and so $lim_{n \longrightarrow \infty} x_n = \sqrt{\alpha}.$\\ 
+The convergence in this case is geometric, but not quadratically geometric as in exercise 16. The rate of convergence will depend on the size of $\alpha.$ For $1<\alpha \leq 2$ we certainly have $ x_n \geq \alpha -2$ for all n, and so in this case $r> \frac{1}{3},$ i.e. $|x_{n+1}^2 - \alpha|< \frac{1}{9}|x_{n-1}^2- \alpha |.$ \\ 
+This implies that $|x_{n+1}- \sqrt{\alpha}|< \frac{1}{9} \frac{x_{n-1}+ \sqrt{\alpha}}{x_{n+1}+\sqrt{\alpha}}|.$ \\ 
+If n is even, we can at least assume $x_1 <1.5$ (since $\alpha \leq 2),$ and so  $\frac{x_{n-1}+\sqrt{\alpha}}{x_{n+1}+\sqrt{\alpha}}<1.5,$so that $|x_{n+1}-\sqrt{\alpha}|<\frac{1.5}{9}|x_{n-1}-\alpha|.$ \\ 
+
+\section*{18}
+Replace the recursion formula from problem 16 by $x_{n+1}=\frac{p-1}{p}x_n + \frac{\alpha}{p}x_n^{-p+1},$ where p is a fixed positive integer, and describe the behavior of the resulting sequences ${x_n}.$ \\ 
+(Exercise 16 is the case p=2 of course.) \\ 
+The main work is done by the following easily derived formulas, which hold if $x_n > \alpha ^\frac{1}{p}.$ \\ 
+$x_{n+1}- \alpha ^\frac{1}{p}= (x_n - \alpha^ \frac{1}{p})[(\frac{p-1}{p})-\frac{1}{p}((\frac{\alpha^\frac{1}{p}}{x_n})+ \dots + (\frac{\alpha^\frac{1}{p}}{x_n})^{p-1}))]$\\ 
+$x_{n+1}- \alpha ^\frac{1}{p}< (x_n- \alpha ^\frac{1}{p})(\frac{p-1}{p})(1-(\frac{\alpha^\frac{1}{p}}{x_n}^{p-1}) $ \\ 
+$x_{n+1}- \alpha ^\frac{1}{p}= (x_n- \alpha ^\frac{1}{p})(\frac{p-1}{px_n^{p-1}})(x_n^{p-1}-(\alpha ^\frac{1}{p})^{p-1})$ \\ 
+$x_{n+1}- \alpha ^\frac{1}{p}= (x_n- \alpha ^\frac{1}{p})^2 (\frac{p-1}{px_n^{p-1}})[x_n^{p-2}+x_n^{p-3}\alpha ^\frac{1}{p}+ ...+ \alpha^ \frac{p-2}{p}]$ \\ 
+$x_{n+1}- \alpha ^\frac{1}{p}< (x_n- \alpha ^\frac{1}{p})^2 (\frac{(p-1)^2}{p x_n})$ \\ 
+$x_{n+1}- \alpha ^\frac{1}{p}< (x_n- \alpha ^\frac{1}{p})^2 (\frac{(p-1)^2}{p \alpha ^\frac{1}{p}})$. \\ 
+Thus, we can guarantee quadratic-geometric convergence if we start with $x_1 - \alpha ^\frac{1}{p}= \epsilon_1 < \beta = \frac{p \alpha ^ \frac{1}{p}}{(p-1)^2}.$ In that case we obtain the same inequalities as in exercise 16, and $x_n \longrightarrow \alpha ^\frac{1}{p}.$
 
 \section{The Third Compilation}
 \section*{Me Pontificating}
@@ -532,7 +974,7 @@ Hence, f has three real roots.
 \newpage
 
 
-\section*{2}
+\subsection*{2}
 (10 points) Suppose that the function f(x) is defined on $R^1,$ that f(x) is continuous at $x=-9,$ that f(5)=-100, and that for all real x and y, $f(x+y)=f(x)+f(y).$ \\ 
 Find an explicit, closed-form expression for f(x). \\ 
 Establish that there is one, and only one, such function; that is, prove that the function is unique. \\ 
