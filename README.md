@@ -6,3 +6,5 @@ Just think about the task and objective and you still need a massive checklist f
 
 
 Tonight I watched another photonics youtube video while I was sick and then I read some paper on Quantum Sensors to fruition. 
+
+I know I'm burning myself out during a global pandemic and wariii and a breakup and my dad's cancer and adulthood, but it makes me feel better.  
